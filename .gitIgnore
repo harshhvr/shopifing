@@ -86,7 +86,6 @@ typings/
 /frontend2
 /frontend3
 /stripe-account.jpg
-/@ecommerce-images
 *.zip
 *.env
 

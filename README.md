@@ -1,4 +1,4 @@
-# MERN E-COMMERCE TUTORIAL
+# Shopyfing - An e-commerce
 
 Hi! My name is **Abhishek Singh**, I have created this tutorial to teach MERN Stack for free on YouTube.
 
