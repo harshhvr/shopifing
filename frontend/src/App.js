@@ -42,6 +42,7 @@ import ProductReviews from "./component/Admin/ProductReviews";
 import Contact from "./component/layout/Contact/Contact";
 import About from "./component/layout/About/About";
 import NotFound from "./component/layout/Not Found/NotFound";
+import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -81,6 +82,7 @@ function App() {
       )}
 
       <Switch>
+        <Route exact path="/" render={() => <Redirect to="/home" />} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/product/:id" component={ProductDetails} />
         <Route exact path="/products" component={Products} />
