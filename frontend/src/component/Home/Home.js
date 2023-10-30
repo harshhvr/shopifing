@@ -33,14 +33,16 @@ const Home = () => {
             <p>Welcome to Ecommerce</p>
             <h1>FIND AMAZING PRODUCTS BELOW</h1>
 
-            <a href="#container">
+            <a href="#homeHeading">
               <button>
                 Scroll <CgMouse />
               </button>
             </a>
           </div>
 
-          <h2 className="homeHeading">Featured Products</h2>
+          <h2 className="homeHeading" id="homeHeading">
+            Featured Products
+          </h2>
 
           <div className="container" id="container">
             {products &&
