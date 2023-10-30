@@ -1,3 +1,110 @@
+// About
+
+// My SCSS
+
+.about-section {
+  position: relative;
+  padding: 1rem;
+
+  > .about-section-inner {
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 80%;
+
+    @media only screen and (max-width: 960px) {
+      width: 100%;
+    }
+
+    > .title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: tomato;
+    }
+
+    > .article {
+      display: grid;
+      grid-gap: 1rem;
+      position: relative;
+      padding: 1rem 0;
+      text-align: center;
+
+      > .title {
+        font-size: 1.5rem;
+      }
+
+      > .card-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20vmax, 1fr));
+        grid-gap: 1rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        > .card-item {
+          > .card {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-gap: 1rem;
+            position: relative;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 2px solid #000;
+
+            &:hover {
+              border-color: tomato;
+            }
+
+            > .card-head,
+            .card-body,
+            .card-foot {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+            }
+
+            > .card-head {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              img {
+                display: flex;
+                width: 15vmax;
+                height: 15vmax;
+                object-fit: cover;
+                border-radius: 100%;
+              }
+            }
+
+            > .card-foot {
+              > .social-icon-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                font-size: 2rem;
+
+                a {
+                  color: inherit;
+
+                  &:hover {
+                    color: tomato;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Old CSS */
+
 .aboutSection {
   height: 100vh;
   width: 100vw;
