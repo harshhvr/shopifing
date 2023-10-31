@@ -39,7 +39,10 @@ footer {
 .midFooter > h1 {
   font-size: 4vmax;
   font-family: "Roboto";
-  color: #eb4034;
+  background: linear-gradient(45deg, #ff6347, #ff3814);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .midFooter > p {
   max-width: 60%;
