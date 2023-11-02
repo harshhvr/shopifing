@@ -37,6 +37,7 @@
   transition: all 0.3s;
   cursor: pointer;
 }
+
 .page-item:first-child {
   border-radius: 5px 0 0 5px;
 }
@@ -44,6 +45,7 @@
 .page-item:last-child {
   border-radius: 0 5px 5px 0;
 }
+
 .page-link {
   text-decoration: none;
   font: 300 0.7vmax "Roboto";
@@ -86,6 +88,7 @@
   cursor: pointer;
   transition: all 0.5s;
 }
+
 .category-link:hover {
   color: tomato;
 }
@@ -95,16 +98,14 @@
 }
 
 @media screen and (max-width: 600px) {
-  .products{
+  .products {
     margin-left: 0;
   }
-
   .filterBox {
     width: 20vmax;
     position: static;
     margin: auto;
   }
-
   .page-link {
     font: 300 1.7vmax "Roboto";
   }

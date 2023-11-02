@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {} from "react-router-dom";
+import "./Header.css";
 import logo from "../../../assets/logo-lite.svg";
 import defaultAvatar from "../../../assets/avatar-lite.svg";
 
@@ -17,15 +18,15 @@ import {
   FaUser,
 } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom/cjs/react-router-dom.min";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { logout } from "../../../actions/userAction";
 import { useAlert } from "react-alert";
 
-const Header = ({ user }) => {
+const Header = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
 
-  // const { isAuthenticated, user } = useSelector((state) => state.user);
+  const { user } = useSelector((state) => state.user);
 
   const isAdmin = user && user.role && user.role === "admin";
 
