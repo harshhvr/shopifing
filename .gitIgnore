@@ -83,10 +83,11 @@ typings/
 /frontend/.env.production.local
 
 # other
-/@ecommerce-images
-/frontend2
-/frontend3
-/stripe-account.jpg
+@ecommerce-images
+frontend2
+*.svg
+*.png
+*.jpg
 *.zip
 *.env
 
